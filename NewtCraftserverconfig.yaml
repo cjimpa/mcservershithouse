@@ -19,13 +19,13 @@ services:
       MAX_PLAYERS: 10
       PVP: "true"
       MOTD: "A Create Focused Minecraft Server"
-      ENFORCE_WHITELIST="true"
-      ENABLE_WHITELIST="true"
-      WHITELIST="CalculousNewt63","Polyca",
-      ANNOUNCE_PLAYER_ACHIEVEMENTS=true
-      SPAWN_PROTECTION=50
-      SEED="shiddingnfarding"
-      SERVER_NAME=NewtCraft
+      ENFORCE_WHITELIST: "true"
+      ENABLE_WHITELIST: "true"
+      WHITELIST: "CalculousNewt63","Polyca",
+      ANNOUNCE_PLAYER_ACHIEVEMENTS: true
+      SPAWN_PROTECTION: 50
+      SEED: "shiddingnfarding"
+      SERVER_NAME: NewtCraft
 
     ports:
       - "25565:25565"
