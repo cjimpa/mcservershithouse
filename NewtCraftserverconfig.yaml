@@ -8,7 +8,7 @@ services:
     environment:
       EULA: "true"
       TYPE: AUTO_CURSEFORGE
-      CF_PAGE_URL: https://legacy.curseforge.com/minecraft/modpacks/newtcraft-1-20-1
+      CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/steam-punk
       MEMORY: "6G"
       TZ: "America/California"
       OVERRIDE_SERVER_PROPERTIES: "true"
