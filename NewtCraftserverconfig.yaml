@@ -1,36 +1,22 @@
-version: "3"
+version: "3.8"
+
 services:
   mc:
     image: itzg/minecraft-server
-    volumes:
-    - ./modpacks:/modpacks:ro
-    - data:/data
-    environment:
-      EULA: "true"
-      TYPE: AUTO_CURSEFORGE
-      CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/steam-punk
-      MEMORY: "6G"
-      TZ: "America/California"
-      OVERRIDE_SERVER_PROPERTIES: "true"
-      DIFFICULTY: "hard"
-      MAX_TICK_TIME: "-1"
-      ALLOW_FLIGHT: "true"
-      OPS: "CalculousNewt63"
-      VIEW_DISTANCE: 10
-      MAX_PLAYERS: 10
-      PVP: "true"
-      MOTD: "A Create Focused Minecraft Server"
-      ENFORCE_WHITELIST: "true"
-      ENABLE_WHITELIST: "true"
-      WHITELIST: "CalculousNewt63,Polyca"
-      ANNOUNCE_PLAYER_ACHIEVEMENTS: true
-      SPAWN_PROTECTION: 50
-      SEED: "shiddingnfarding"
-      SERVER_NAME: NewtCraft
-
     ports:
       - "25565:25565"
-    restart: unless-stopped
+    environment:
+      EULA: "true"
+      MOD_PLATFORM: AUTO_CURSEFORGE
+      # allocate from https://console.curseforge.com/ and set in .env file
+      CF_API_KEY: $2a$10$/0y4AiOpgliUIC3Qt6OFe.0i.Z4I7IOY3Lb37yc6z2zCmW/k7ujeS
+      CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/newtcraft-1-20-1
+      # Optional: select a specific version/file
+      #CF_FILENAME_MATCHER: "0.2.34"
+      MEMORY: 4G
+    volumes:
+      - mc-data:/data
+      - ./downloads:/downloads
 
 volumes:
-  data: {}
+  mc-data: {}
