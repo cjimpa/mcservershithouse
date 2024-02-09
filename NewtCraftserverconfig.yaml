@@ -11,6 +11,8 @@ services:
       # allocate from https://console.curseforge.com/ and set in .env file
       CF_API_KEY: $2a$10$/0y4AiOpgliUIC3Qt6OFe.0i.Z4I7IOY3Lb37yc6z2zCmW/k7ujeS
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/create-perfect-world/files/5017725
+      CF_EXCLUDE_MODS: |
+        create-recycle-everything
       # Optional: select a specific version/file
       #CF_FILENAME_MATCHER: "0.2.34"
       MEMORY: 24G
