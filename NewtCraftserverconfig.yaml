@@ -5,6 +5,8 @@ services:
     image: itzg/minecraft-server
     ports:
       - "25565:25565"
+    command: --mapping=newt-craft.com=192.168.0.46:25565
+      
     environment:
       EULA: "true"
       MOD_PLATFORM: AUTO_CURSEFORGE
