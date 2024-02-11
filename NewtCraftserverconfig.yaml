@@ -11,8 +11,8 @@ services:
       # allocate from https://console.curseforge.com/ and set in .env file
       CF_API_KEY: $2a$10$/0y4AiOpgliUIC3Qt6OFe.0i.Z4I7IOY3Lb37yc6z2zCmW/k7ujeS
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/newtcraft-1-20-1/files/4993250
-      CF_EXCLUDE_MODS: |
-        itemphysiclite
+  #    CF_EXCLUDE_MODS: |
+  #      itemphysiclite
 
       # Optional: select a specific version/file
       #CF_FILENAME_MATCHER: "0.2.34"
