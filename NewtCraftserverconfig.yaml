@@ -13,6 +13,7 @@ services:
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/create-perfect-world/files/5017725
       CF_EXCLUDE_MODS: |
         create-recycle-everything
+        freecam
       # Optional: select a specific version/file
       #CF_FILENAME_MATCHER: "0.2.34"
       MEMORY: 24G
