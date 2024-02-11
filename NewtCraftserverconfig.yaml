@@ -5,13 +5,12 @@ services:
     image: itzg/minecraft-server
     ports:
       - "25565:25565"
-    command: --mapping=mc.newt-craft.com=192.168.0.46:25565
+  #  command: --mapping=mc.newt-craft.com=192.168.0.46:25565
       
     environment:
       EULA: "true"
       MOD_PLATFORM: AUTO_CURSEFORGE
       # allocate from https://console.curseforge.com/ and set in .env file
-      CF_API_KEY: $2a$10$/0y4AiOpgliUIC3Qt6OFe.0i.Z4I7IOY3Lb37yc6z2zCmW/k7ujeS
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/newtcraft-1-20-1/files/5098257
   #    CF_EXCLUDE_MODS: |
   #      itemphysiclite
