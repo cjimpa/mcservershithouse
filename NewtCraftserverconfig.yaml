@@ -24,6 +24,7 @@ services:
     volumes:
       - mc-data:/data
       - ./downloads:/downloads
+      - /home/calculousnewt63/.env:.env
 
     env_file:
         - .env
