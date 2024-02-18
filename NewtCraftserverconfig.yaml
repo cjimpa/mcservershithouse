@@ -25,5 +25,8 @@ services:
       - mc-data:/data
       - ./downloads:/downloads
 
+    env_file:
+        - .env
+
 volumes:
   mc-data: {}
