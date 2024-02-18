@@ -11,7 +11,7 @@ services:
       EULA: "true"
       MOD_PLATFORM: AUTO_CURSEFORGE
       # allocate from https://console.curseforge.com/ and set in .env file
-      CF_API_KEY: /home/calculousnewt63/.env
+      CF_API_KEY: "/home/calculousnewt63/.env"
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/newtcraft-1-20-1/files/5098257
       
       
