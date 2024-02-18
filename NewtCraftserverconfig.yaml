@@ -27,7 +27,7 @@ services:
       - /home/calculousnewt63/.env:.env
 
     env_file:
-        - .env
+        - ./.env
 
 volumes:
   mc-data: {}
