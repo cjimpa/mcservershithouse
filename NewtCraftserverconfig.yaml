@@ -11,7 +11,7 @@ services:
       REPLACE_ENV_IN_PLACE: "true"
       
       # allocate from https://console.curseforge.com/ and set in .env file
-      CF_API_KEY: ${CF_API_KEY}
+      CF_API_KEY: ${CFG_API_KEY}
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/newtcraft-1-20-1/files/5098257
   #    CF_EXCLUDE_MODS: |
   #      itemphysiclite
