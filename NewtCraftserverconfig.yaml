@@ -31,7 +31,7 @@ services:
 
 secrets:
    cf_api_key:
-     file: ./cf_api_key
+     file: /home/calculousnewt63/cf_api_key
 
 volumes:
   mc-data: {}
