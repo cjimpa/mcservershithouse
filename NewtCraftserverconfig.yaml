@@ -5,17 +5,12 @@ services:
     image: itzg/minecraft-server
     ports:
       - "25565:25565"
-  #  command: --mapping=mc.newt-craft.com=192.168.0.46:25565
-      
     environment:
       EULA: "true"
       MOD_PLATFORM: AUTO_CURSEFORGE
       # allocate from https://console.curseforge.com/ and set in .env file
-      ENABLE_WHITELIST: "true"
+      CF_API_KEY: ${CF_API_KEY}
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/newtcraft-1-20-1/files/5098257
-      CF_API_KEY: /run/secrets/cf_api_key
-      
-      
   #    CF_EXCLUDE_MODS: |
   #      itemphysiclite
 
@@ -25,13 +20,6 @@ services:
     volumes:
       - mc-data:/data
       - ./downloads:/downloads
-    secrets:
-      - cf_api_key
-
-
-secrets:
-   cf_api_key:
-     file: /home/calculousnewt63/cf_api_key
 
 volumes:
   mc-data: {}
