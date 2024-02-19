@@ -27,7 +27,7 @@ services:
       - /home/calculousnewt63/stack.env:stack.env
 
     env_file:
-        - ./stack.env
+        - stack.env
 
 volumes:
   mc-data: {}
