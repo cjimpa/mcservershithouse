@@ -13,6 +13,7 @@ services:
       # allocate from https://console.curseforge.com/ and set in .env file
       ENABLE_WHITELIST: "true"
       CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/newtcraft-1-20-1/files/5098257
+      CF_API_KEY: /run/secrets/cf_api_key
       
       
   #    CF_EXCLUDE_MODS: |
@@ -24,10 +25,13 @@ services:
     volumes:
       - mc-data:/data
       - ./downloads:/downloads
-      - /home/calculousnewt63/stack.env:stack.env
+    secrets:
+      - cf_api_key
 
-    env_file:
-        - stack.env
+
+secrets:
+   cf_api_key:
+     file: /home/calculousnewt63/cf_api_key
 
 volumes:
   mc-data: {}
