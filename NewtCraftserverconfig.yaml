@@ -24,10 +24,10 @@ services:
     volumes:
       - mc-data:/data
       - ./downloads:/downloads
-      - /home/calculousnewt63/.env:.env
+      - /home/calculousnewt63/stack.env:stack.env
 
     env_file:
-        - ./.env
+        - ./stack.env
 
 volumes:
   mc-data: {}
